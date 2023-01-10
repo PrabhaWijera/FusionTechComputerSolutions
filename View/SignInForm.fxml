@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signupwindowContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.SignInForm">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" opacity="0.94">
+         <image>
+            <Image url="@../Assets/lap3.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="876.0" fitWidth="494.0" layoutX="516.0" layoutY="60.0">
+         <image>
+            <Image url="@../Assets/yu.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust contrast="1.0" hue="0.02" saturation="-0.22" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="608.0" layoutY="85.0" prefHeight="71.0" prefWidth="327.0" text="Create an account">
+         <font>
+            <Font name="MT Extra" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="651.0" layoutY="156.0" text="Please fill your information below." />
+      <Button layoutX="581.0" layoutY="725.0" mnemonicParsing="false" onAction="#create_accountOnAction" prefHeight="49.0" prefWidth="365.0" style="-fx-background-color: #0080FF;" text="Create Account" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="37.0">
+               <image>
+                  <Image url="@../Assets/add-user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.49" light="$null" specularConstant="1.45" specularExponent="36.1" surfaceScale="2.72">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <ComboBox layoutX="571.0" layoutY="485.0" prefHeight="39.0" prefWidth="365.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularConstant="1.57" specularExponent="30.24" surfaceScale="5.04">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></ComboBox>
+      <Label layoutX="571.0" layoutY="257.0" text="NIC-:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nic_txt" layoutX="571.0" layoutY="278.0" prefHeight="39.0" prefWidth="365.0" promptText="NIC Number">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="571.0" layoutY="344.0" text="Name-:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name_txt" layoutX="571.0" layoutY="377.0" prefHeight="39.0" prefWidth="365.0" promptText="Name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="575.0" layoutY="581.0" text="Password-:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password_txt" layoutX="571.0" layoutY="602.0" prefHeight="39.0" prefWidth="365.0" promptText="**********">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></PasswordField>
+      <Label layoutX="573.0" layoutY="458.0" text="Job Role-:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="563.0" layoutY="815.0" text="By selecting Create account,you agree to our">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="800.0" layoutY="815.0" text="Terms" textFill="#5107ff">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="835.0" layoutY="815.0" text="and have read and ">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="652.0" layoutY="832.0" text="acknowledge out">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="746.0" layoutY="832.0" text="Global Privacy Statement" textFill="#2200ff">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="518.0" layoutY="951.0" prefHeight="17.0" prefWidth="637.0" text="© 2001-2002 All Right Reserved.FusionTech© is registered trademark of The FusionTechComputerSolutions,LLC." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="518.0" layoutY="968.0" text="Privacy and Terms." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <MediaView fx:id="mediaview" fitHeight="750.0" fitWidth="600.0" layoutX="1068.0" layoutY="120.0" />
+      <Label layoutX="637.0" layoutY="861.0" text="Already have a account ?">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="860.0" onMouseClicked="#LogAgainOnAction" text="Login" textFill="#004dff" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeeContext" prefHeight="1004.0" prefWidth="1584.0" style="-fx-background-color: #ADC5CF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.EmployeeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2e6ee" height="60.0" stroke="BLACK" strokeType="INSIDE" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="26.34" surfaceScale="5.52">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9980fa" height="399.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="1.95" light="$null" specularConstant="0.0" specularExponent="27.32" surfaceScale="6.13">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <TextField fx:id="Employe_IdTxt" layoutX="87.0" layoutY="113.0" prefHeight="43.0" prefWidth="407.0" promptText="EmployeeID">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="1148.0" layoutY="86.0" text="Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="622.0" layoutY="86.0" prefHeight="27.0" prefWidth="137.0" text="Employee NIC">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#596275" height="83.0" layoutY="459.0" stroke="BLACK" strokeType="INSIDE" width="1585.0" />
+      <TextField fx:id="employee_NicTxt" layoutX="622.0" layoutY="113.0" prefHeight="43.0" prefWidth="407.0" promptText="Employee NIC" />
+      <TextField fx:id="Employee_nameTxt" layoutX="1148.0" layoutY="113.0" prefHeight="43.0" prefWidth="407.0" promptText="Name" />
+      <Label layoutX="1148.0" layoutY="186.0" text="Birth Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dobTxt" layoutX="1148.0" layoutY="210.0" prefHeight="43.0" prefWidth="407.0" promptText="mm/dd/yyyy" />
+      <Label layoutX="625.0" layoutY="285.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1154.0" layoutY="285.0" text="Addresss">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="186.0" text="Phone">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="623.0" layoutY="186.0" text="Email">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="285.0" text="JobRole">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="378.0" text="JoinDate">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="joindateTxt" layoutX="87.0" layoutY="405.0" prefHeight="43.0" prefWidth="407.0" promptText="mm/dd/yyyy" />
+      <TextField fx:id="emailTxt" layoutX="623.0" layoutY="210.0" prefHeight="43.0" prefWidth="407.0" promptText="\@" />
+      <TextField fx:id="phonetxt" layoutX="87.0" layoutY="210.0" prefHeight="43.0" prefWidth="407.0" promptText="+94" />
+      <Button layoutX="1199.0" layoutY="464.0" mnemonicParsing="false" onAction="#AddOnAction" prefHeight="50.0" prefWidth="87.0" style="-fx-background-color: #008B74;" text="Add+">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.48" light="$null" specularConstant="0.08" specularExponent="4.88" surfaceScale="6.5">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="1325.0" layoutY="464.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="50.0" prefWidth="87.0" style="-fx-background-color: #0652DD;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.32" light="$null" specularConstant="0.01" specularExponent="0.0" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="1453.0" layoutY="464.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="50.0" prefWidth="87.0" style="-fx-background-color: #ED4C67;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.39" light="$null" specularConstant="1.1" specularExponent="37.56" surfaceScale="5.04">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Label layoutX="92.0" layoutY="86.0" text="Employee ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="13.0" text="Employee Manage">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addressTxt" layoutX="1154.0" layoutY="308.0" prefHeight="43.0" prefWidth="407.0" />
+      <TableView fx:id="employefullTBL" layoutX="49.0" layoutY="580.0" prefHeight="287.0" prefWidth="1487.0" style="-fx-background-color: #4FFBDF;">
+        <columns>
+          <TableColumn fx:id="ColemployeeId" prefWidth="144.0" text="Employee ID" />
+          <TableColumn fx:id="ColemployeeNic" prefWidth="179.99996948242188" text="Employee NIC" />
+            <TableColumn fx:id="ColName" prefWidth="164.0" text="Name" />
+            <TableColumn fx:id="ColAddress" prefWidth="165.0" text="Address" />
+            <TableColumn fx:id="ColphoneNumber" prefWidth="191.0" text="PhoneNumber" />
+            <TableColumn fx:id="Colemail" prefWidth="162.0" text="Email" />
+            <TableColumn fx:id="Colgender" prefWidth="123.0" text="Gender" />
+            <TableColumn fx:id="ColDob" prefWidth="142.0" text="Birth Date" />
+            <TableColumn fx:id="ColJobrole" prefWidth="89.0" text="Job Role" />
+            <TableColumn fx:id="ColjoinDate" prefWidth="126.0" text="Join Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="1017.0" layoutY="471.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="43.0" prefWidth="137.0" style="-fx-background-color: #f6b93b;" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.39" light="$null" specularConstant="0.57" specularExponent="17.56" surfaceScale="6.74">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <TextField fx:id="jobroleTxt" layoutX="87.0" layoutY="308.0" prefHeight="43.0" prefWidth="407.0" />
+      <TextField fx:id="genderTxt" layoutX="622.0" layoutY="314.0" prefHeight="43.0" prefWidth="407.0" />
+      <Button layoutX="1424.0" layoutY="882.0" mnemonicParsing="false" onAction="#ReloadOnAction" prefHeight="43.0" prefWidth="113.0" style="-fx-background-color: #786fa6;" text="Reload">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.59" light="$null" specularConstant="0.89" specularExponent="21.95" surfaceScale="7.11">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+   </children>
+</AnchorPane>

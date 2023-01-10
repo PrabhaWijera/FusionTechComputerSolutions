@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="StockContext" prefHeight="1004.0" prefWidth="1584.0" style="-fx-background-color: #ADC5CF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.StockFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#596275" height="69.0" layoutX="5.0" layoutY="317.0" stroke="BLACK" strokeType="INSIDE" width="1578.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9980fa" height="239.0" layoutX="5.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="1578.0">
+         <effect>
+            <Lighting diffuseConstant="1.46" light="$null" specularConstant="0.08" specularExponent="17.07" surfaceScale="6.5">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Label layoutX="47.0" layoutY="100.0" text="Stock ID-">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1096.0" layoutY="100.0" text="ItemCode">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="213.0" text="Stock QTY-">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="574.0" layoutY="100.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stockIdTxt" layoutX="47.0" layoutY="129.0" prefHeight="42.0" prefWidth="343.0" promptText="StockID">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="StockqtyTxt" layoutX="47.0" layoutY="242.0" prefHeight="42.0" prefWidth="343.0" promptText="QTY">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="itemCodeTxt" layoutX="1096.0" layoutY="135.0" prefHeight="42.0" prefWidth="343.0" promptText="itemCode">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="dateTxt" layoutX="574.0" layoutY="135.0" prefHeight="42.0" prefWidth="343.0" promptText="mm/dd/yyyy">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TableView fx:id="stockTbl" layoutX="516.0" layoutY="437.0" prefHeight="346.0" prefWidth="557.0" style="-fx-background-color: #4FFBDF;">
+        <columns>
+          <TableColumn fx:id="ColStockId" prefWidth="115.0" text="Stock ID" />
+            <TableColumn fx:id="ColQty" prefWidth="241.0" text="Qty" />
+            <TableColumn fx:id="ColDate" prefWidth="198.0" text="Date" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="78.0" prefWidth="1584.0" style="-fx-background-color: #d2e6ee;">
+         <effect>
+            <Lighting diffuseConstant="1.62" light="$null" specularConstant="0.49" specularExponent="40.0" surfaceScale="6.39">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+         <children>
+            <Label layoutX="14.0" layoutY="13.0" text="Stock Manage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="1134.0" layoutY="798.0" mnemonicParsing="false" onAction="#Stock_Manage_EmployeeOnAction" text="StockMangeEmploye">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.63" light="$null" specularConstant="1.4" specularExponent="38.05" surfaceScale="4.67">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="864.0" layoutY="798.0" mnemonicParsing="false" onAction="#Stock_ItemDetails_OnAction" text="StockItemsDetails" />
+      <Button layoutX="1108.0" layoutY="331.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: #008B74;" text="Add+" />
+      <Button layoutX="1227.0" layoutY="331.0" mnemonicParsing="false" onAction="#editonAction" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: #0652DD;" text="Edit" />
+      <Button layoutX="1349.0" layoutY="331.0" mnemonicParsing="false" onAction="#deleteeOnAction" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: #ED4C67;" text="Delete" />
+      <Button layoutX="1002.0" layoutY="336.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #f6b93b;" text="Search" />
+      <Button layoutX="1455.0" layoutY="783.0" mnemonicParsing="false" onAction="#ReloadOnAction" text="Reload" />
+   </children>
+   <effect>
+      <Lighting diffuseConstant="2.0" light="$null" surfaceScale="8.7">
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+      </Lighting>
+   </effect>
+</AnchorPane>

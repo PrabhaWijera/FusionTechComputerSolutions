@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #9b59b6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.DashHomeController">
+   <children>
+      <AnchorPane layoutX="-9.0" layoutY="-9.0" prefHeight="87.0" prefWidth="1931.0" style="-fx-background-color: #5f27cd;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="86.0" layoutX="14.0" layoutY="10.0">
+               <image>
+                  <Image url="@../Assets/llg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="108.0" layoutY="24.0" text="Fusion Tech Computer Solutions" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="1790.0" layoutY="17.0" mnemonicParsing="false" onAction="#LogOut_OnAction" style="-fx-background-color: #6F1E51;" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.93" light="$null" specularConstant="0.0" specularExponent="22.44" surfaceScale="3.57">
+                     <bumpInput>
+                        <Shadow /> 
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="timeLbl" layoutX="1482.0" layoutY="17.0" prefHeight="21.0" prefWidth="210.0" text="f" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="20.0" />
+               </font></Label>
+            <Label fx:id="dateLbl" layoutX="1280.0" layoutY="17.0" prefHeight="21.0" prefWidth="137.0" text="f" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="1222.0" layoutY="19.0" text="Date : " textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="1428.0" layoutY="19.0" text="Time :" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Lighting diffuseConstant="1.32" light="$null" specularConstant="0.0" specularExponent="25.37" surfaceScale="6.71">
+               <bumpInput>
+                  <Shadow blurType="ONE_PASS_BOX" />
+               </bumpInput>
+            </Lighting>
+         </effect></AnchorPane>
+      <AnchorPane fx:id="pane" layoutX="336.0" layoutY="77.0" prefHeight="1004.0" prefWidth="1584.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fed330" height="118.0" layoutX="22.0" layoutY="127.0" stroke="BLACK" strokeDashOffset="10.0" strokeType="OUTSIDE" strokeWidth="2.0" width="445.0">
+               <effect>
+                  <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.12" specularExponent="36.1" surfaceScale="3.45">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect></Rectangle>
+            <ImageView fitHeight="74.0" fitWidth="81.0" layoutX="361.0" layoutY="149.0">
+               <image>
+                  <Image url="@../Assets/community.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="142.0" text="Total Customer" textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="20.0" />
+               </font>
+            </Label>
+            <BarChart layoutX="325.0" layoutY="534.0" prefHeight="156.0" prefWidth="1094.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </BarChart>
+            <Label layoutX="673.0" layoutY="486.0" text="Monthly Selling Rate">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#26de81" height="118.0" layoutX="568.0" layoutY="127.0" stroke="BLACK" strokeDashOffset="10.0" strokeType="OUTSIDE" strokeWidth="2.0" width="445.0">
+               <effect>
+                  <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="40.0" surfaceScale="4.07">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect></Rectangle>
+            <ImageView fitHeight="87.0" fitWidth="109.0" layoutX="886.0" layoutY="143.0">
+               <image>
+                  <Image url="@../Assets/widget.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="582.0" layoutY="142.0" prefHeight="21.0" prefWidth="117.0" text="Top Item" textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="total_customerlbl" layoutX="211.0" layoutY="197.0" prefHeight="31.0" prefWidth="51.0" text=".........." />
+            <Label fx:id="top_itemLbl" layoutX="726.0" layoutY="202.0" prefHeight="21.0" prefWidth="183.0" text="..............." />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4bcffa" height="118.0" layoutX="1101.0" layoutY="127.0" stroke="BLACK" strokeDashOffset="10.0" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" width="445.0">
+               <effect>
+                  <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="40.0" surfaceScale="4.06">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect></Rectangle>
+         </children>
+         <effect>
+            <InnerShadow choke="0.7" color="#250303" height="17.89" radius="6.890000000000001" width="11.67" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></AnchorPane>
+      <VBox layoutX="2.0" layoutY="196.0" prefHeight="822.0" prefWidth="335.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Go_itemOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Items" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="51.0">
+                     <image>
+                        <Image url="@../Assets/widget.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.44" light="$null" specularConstant="0.88" specularExponent="26.34" surfaceScale="5.4">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_ordersOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Orders" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="47.0">
+                     <image>
+                        <Image url="@../Assets/order.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="2.0" light="$null" specularConstant="1.45" specularExponent="36.1" surfaceScale="5.16">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_employeeOnAction" prefHeight="69.0" prefWidth="338.0" style="-fx-background-color: #7f8c8d;" text="Employee" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="52.0">
+                     <image>
+                        <Image url="@../Assets/employees.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="2.0" light="$null" specularConstant="1.86" specularExponent="27.32" surfaceScale="6.99">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_customerOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Customers" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="49.0">
+                     <image>
+                        <Image url="@../Assets/community.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.78" light="$null" specularConstant="1.1" specularExponent="21.95" surfaceScale="7.72">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_paymentOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Payments" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="43.0">
+                     <image>
+                        <Image url="@../Assets/payment-method.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.56" light="$null" specularConstant="1.45" specularExponent="24.39" surfaceScale="6.01">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_suppliersOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Suppliers" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="44.0">
+                     <image>
+                        <Image url="@../Assets/inventory.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.49" light="$null" specularExponent="4.88" surfaceScale="8.57">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_attendsOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Attends" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../Assets/attendance.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.46" light="$null" specularConstant="1.08" specularExponent="22.93" surfaceScale="7.48">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_stockOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Stock" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="61.0">
+                     <image>
+                        <Image url="@../Assets/warehouse.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.44" light="$null" specularConstant="0.37" specularExponent="15.61" surfaceScale="6.14">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_deliveryOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Delivery" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="48.0">
+                     <image>
+                        <Image url="@../Assets/shipped.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.66" light="$null" specularConstant="0.33" specularExponent="12.2" surfaceScale="8.21">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_returnOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Return" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="35.0">
+                     <image>
+                        <Image url="@../Assets/product-return.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.63" light="$null" specularConstant="0.69" specularExponent="16.1" surfaceScale="7.23">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#Go_salaryOnAction" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Salary" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="1.44" light="$null" specularConstant="1.28" specularExponent="21.46" surfaceScale="5.16">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Go_newAccount" prefHeight="69.0" prefWidth="335.0" style="-fx-background-color: #7f8c8d;" text="Create New Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="2.0" light="$null" specularConstant="2.0" specularExponent="40.0" surfaceScale="6.26">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="-6.0" layoutY="77.0" opacity="0.9" prefHeight="118.0" prefWidth="343.0" style="-fx-background-color: #2c3e50;">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="1.95" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="81.0" layoutX="14.0" layoutY="12.0">
+               <image>
+                  <Image url="@../Assets/officer.png" />
+               </image>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </ImageView>
+            <Label layoutX="98.0" layoutY="59.0" prefHeight="21.0" prefWidth="97.0" text="USER NAME" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="username_lbl" layoutX="221.0" layoutY="59.0" text="..........." textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label text="Label" />
+   </children>
+   <effect>
+      <Lighting diffuseConstant="1.61" light="$null" specularConstant="0.0" specularExponent="40.0" surfaceScale="2.84">
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+      </Lighting>
+   </effect>
+</AnchorPane>

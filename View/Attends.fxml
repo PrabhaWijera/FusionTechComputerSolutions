@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1004.0" prefWidth="1584.0" style="-fx-background-color: #ADC5CF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.AttendsController">
+   <children>
+      <TableView fx:id="TblfullAttends" layoutX="182.0" layoutY="455.0" prefHeight="424.0" prefWidth="1255.0" style="-fx-background-color: #4FFBDF;">
+         <columns>
+            <TableColumn fx:id="ColattendId" prefWidth="235.99998474121094" text="Attend-ID" />
+            <TableColumn fx:id="Coldate" prefWidth="196.0" text="Date" />
+            <TableColumn fx:id="Col_inTime" prefWidth="191.0" text="In-Time" />
+            <TableColumn fx:id="Col_outTime" prefWidth="185.0" text="Out-Time" />
+            <TableColumn fx:id="Colstetus" prefWidth="554.0" text="Stetus" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2e6ee" height="67.0" stroke="BLACK" strokeType="INSIDE" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="1.71" light="$null" specularExponent="37.56" surfaceScale="3.21">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9980fa" height="310.0" layoutX="-4.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="1592.0">
+         <effect>
+            <Lighting diffuseConstant="1.59" light="$null" specularExponent="14.63" surfaceScale="3.33">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Label layoutX="82.0" layoutY="219.0" text="In-Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inTimeTxt" layoutX="82.0" layoutY="246.0" prefHeight="44.0" prefWidth="325.0" promptText="in" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="outTimeTxt" layoutX="678.0" layoutY="246.0" prefHeight="44.0" prefWidth="325.0" promptText="out" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="678.0" layoutY="219.0" text="Out-Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="678.0" layoutY="100.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateTxt" layoutX="678.0" layoutY="127.0" prefHeight="44.0" prefWidth="325.0" promptText="mm/dd/yyyy" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="1235.0" layoutY="100.0" text="Stetus">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeestetusTxt" layoutX="1235.0" layoutY="127.0" prefHeight="44.0" prefWidth="325.0" promptText="stetus" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="25.0" layoutY="16.0" text="Attendens">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="100.0" text="Attends ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="attendsId_Txt" layoutX="82.0" layoutY="127.0" prefHeight="44.0" prefWidth="325.0" promptText="id" style="-fx-background-color: #ffffff;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#596275" height="67.0" layoutX="-4.0" layoutY="377.0" stroke="BLACK" strokeType="INSIDE" width="1592.0" />
+      <Button layoutX="1140.0" layoutY="389.0" mnemonicParsing="false" onAction="#AddOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #008B74;" text="Add+" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="985.0" layoutY="389.0" mnemonicParsing="false" onAction="#SearchOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #f6b93b;" text="Search" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="1288.0" layoutY="389.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #0652DD;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="1437.0" layoutY="389.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #ED4C67;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="1300.0" layoutY="894.0" mnemonicParsing="false" onAction="#ReloadOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #786fa6;" text="Reload" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

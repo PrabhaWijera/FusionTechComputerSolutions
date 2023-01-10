@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1004.0" prefWidth="1584.0" style="-fx-background-color: #ADC5CF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.SalaryFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#596275" height="63.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="1584.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2e6ee" height="70.0" stroke="BLACK" strokeType="INSIDE" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="32.68" surfaceScale="7.23">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9980fa" height="276.0" layoutY="66.0" stroke="BLACK" strokeType="INSIDE" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularExponent="26.83" surfaceScale="6.99">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <TextField fx:id="amountTxt" layoutX="1107.0" layoutY="138.0" prefHeight="43.0" prefWidth="431.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="employeeIdTxt" layoutX="601.0" layoutY="138.0" prefHeight="43.0" prefWidth="431.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="SalaryIdtxt" layoutX="107.0" layoutY="138.0" prefHeight="43.0" prefWidth="431.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="601.0" layoutY="113.0" text="Employee-ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1107.0" layoutY="113.0" text="Amount">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="113.0" text="Salary-ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="18.0" text="Salary Management">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="1431.0" layoutY="359.0" mnemonicParsing="false" onAction="#deleteOnAction" style="-fx-background-color: #ED4C67;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1341.0" layoutY="359.0" mnemonicParsing="false" onAction="#updateOnAction" style="-fx-background-color: #0652DD;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1259.0" layoutY="359.0" mnemonicParsing="false" onAction="#addOnAction" style="-fx-background-color: #008B74;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TableView layoutX="493.0" layoutY="435.0" prefHeight="383.0" prefWidth="831.0" style="-fx-background-color: #4FFBDF;">
+        <columns>
+          <TableColumn prefWidth="154.0" text="Employee-ID" />
+          <TableColumn prefWidth="162.0" text="Name" />
+            <TableColumn prefWidth="187.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="107.0" layoutY="223.0" text="Salary Method">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="601.0" layoutY="226.0" text="Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="salaryMethodTxt" layoutX="107.0" layoutY="250.0" prefHeight="43.0" prefWidth="431.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="txtDetail" layoutX="601.0" layoutY="250.0" prefHeight="43.0" prefWidth="431.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+   </children>
+</AnchorPane>

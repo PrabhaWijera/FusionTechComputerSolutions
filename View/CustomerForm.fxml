@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CusPane" prefHeight="1004.0" prefWidth="1584.0" style="-fx-background-color: #c4c4c4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.CustomerController">
+   <children>
+      <TableView fx:id="tblCus" layoutX="62.0" layoutY="457.0" prefHeight="287.0" prefWidth="1483.0" style="-fx-background-color: #4FFBDF;">
+        <columns>
+          <TableColumn fx:id="ColCusID" prefWidth="328.0" text="Customer ID" />
+          <TableColumn fx:id="ColNic" prefWidth="218.0" text="NIC" />
+            <TableColumn fx:id="ColName" prefWidth="326.0" text="Customer Name" />
+            
+
+            <TableColumn fx:id="ColPhone" prefWidth="186.0" text="PhoneNumber" />
+            <TableColumn fx:id="ColEmail" prefWidth="203.0" text="Email " />
+            <TableColumn fx:id="ColAddress" prefWidth="219.0" text="Address" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2e6ee" height="66.0" stroke="BLACK" strokeType="INSIDE" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularExponent="22.44" surfaceScale="5.52">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Label layoutX="14.0" layoutY="16.0" text="Customer Details ">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9980fa" height="256.0" layoutY="66.0" stroke="BLACK" strokeType="INSIDE" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="1.68" light="$null" specularConstant="0.51" specularExponent="25.85" surfaceScale="6.74">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#596275" height="72.0" layoutY="322.0" stroke="BLACK" strokeType="INSIDE" width="1584.0" />
+      <Button layoutX="1286.0" layoutY="335.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #0652DD;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="1431.0" layoutY="335.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #ED4C67;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Label layoutX="61.0" layoutY="99.0" text="Customer ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="584.0" layoutY="99.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1111.0" layoutY="99.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="584.0" layoutY="199.0" prefHeight="38.0" prefWidth="63.0" text="Email">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="204.0" text="Phone No">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1111.0" layoutY="205.0" text="Address">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nicTxt" layoutX="1111.0" layoutY="130.0" prefHeight="47.0" prefWidth="416.0" promptText="type here" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="phoneTxt" layoutX="61.0" layoutY="231.0" prefHeight="47.0" prefWidth="416.0" promptText="+94" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="emailTxt" layoutX="585.0" layoutY="231.0" prefHeight="47.0" prefWidth="416.0" promptText="\@" />
+      <TextField fx:id="CustomerNameTxt" layoutX="584.0" layoutY="130.0" prefHeight="47.0" prefWidth="416.0" promptText="type here" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="addressTxt" layoutX="1111.0" layoutY="232.0" prefHeight="47.0" prefWidth="416.0" promptText="type here" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="CustomerlDTxt" layoutX="62.0" layoutY="130.0" prefHeight="47.0" prefWidth="416.0" style="-fx-background-color: #ffffff;" />
+      <Button layoutX="1000.0" layoutY="336.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #f6b93b;" text="Search" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="1143.0" layoutY="336.0" mnemonicParsing="false" onAction="#AddOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #008B74;" text="Add+" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="1396.0" layoutY="775.0" mnemonicParsing="false" onAction="#ReloadOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #786fa6;" text="Reload" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+   </children>
+   <effect>
+      <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="40.0" surfaceScale="5.4">
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+      </Lighting>
+   </effect>
+</AnchorPane>

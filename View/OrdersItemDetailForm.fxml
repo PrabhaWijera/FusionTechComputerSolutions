@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="927.0" prefWidth="1584.0" style="-fx-background-color: #c4c4c4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.OrdersItemDetailFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" stroke="BLACK" strokeType="INSIDE" width="1589.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" surfaceScale="6.62">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00f846" height="286.0" layoutX="-1.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="1590.0">
+         <effect>
+            <Lighting diffuseConstant="1.95" light="$null" specularConstant="0.0" specularExponent="28.29" surfaceScale="6.99">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Label layoutX="37.0" layoutY="733.0" prefHeight="21.0" prefWidth="87.0" text="Total-">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="95.0" text="Customer Details">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="95.0" layoutY="128.0" prefHeight="31.0" prefWidth="236.0" promptText="Customer Id" />
+      <Label layoutX="95.0" layoutY="322.0" prefHeight="21.0" prefWidth="121.0" text="Item Details">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="20.0" layoutY="238.0" prefWidth="150.0" promptText="ItemCode" />
+      <TextField layoutX="207.0" layoutY="238.0" prefHeight="31.0" prefWidth="143.0" promptText="Name" />
+      <TextField layoutX="362.0" layoutY="238.0" prefHeight="31.0" prefWidth="171.0" promptText="Description" />
+      <TextField layoutX="538.0" layoutY="238.0" prefHeight="31.0" prefWidth="143.0" promptText="Unit Price" />
+      <TextField layoutX="689.0" layoutY="238.0" prefHeight="31.0" prefWidth="121.0" promptText="QtyOnHand" />
+      <TextField layoutX="821.0" layoutY="238.0" promptText="QTY" />
+      <TableView layoutX="293.0" layoutY="602.0" prefHeight="200.0" prefWidth="1035.0" style="-fx-background-color: #FFF7A7;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ItemCode" />
+          <TableColumn prefWidth="326.0" text="Description" />
+            <TableColumn prefWidth="182.0" text="UnitPrice" />
+            <TableColumn prefWidth="205.0" text="QTY" />
+            <TableColumn prefWidth="115.0" text="Total" />
+            <TableColumn prefWidth="131.0" text="Option" />
+        </columns>
+      </TableView>
+      <Button layoutX="987.0" layoutY="282.0" mnemonicParsing="false" text="Add" />
+      <Button layoutX="885.0" layoutY="282.0" mnemonicParsing="false" text="Update" />
+      <Button layoutX="1133.0" layoutY="291.0" mnemonicParsing="false" text="Delete" />
+      <Button layoutX="1210.0" layoutY="811.0" mnemonicParsing="false" text="PlaceOrder" />
+      <Label layoutX="28.0" layoutY="16.0" text="Order&amp;Item Mangement">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="93.0" text="Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="804.0" layoutY="96.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="98.0" text="Address">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1374.0" layoutY="133.0" text="Phone No">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

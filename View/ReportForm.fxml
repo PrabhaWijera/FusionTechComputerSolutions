@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1004.0" prefWidth="1584.0" style="-fx-background-color: #d2dae2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.ReportFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="85.0" layoutX="-4.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="1592.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularExponent="27.32" surfaceScale="7.36">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00ff4d" height="331.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" width="1588.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="24.88" surfaceScale="6.25">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Label layoutX="14.0" layoutY="20.0" text="Report Management">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="92.0" layoutY="132.0" text="ReportID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="609.0" layoutY="132.0" text="EmployeeID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="276.0" text="ReportDate">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1113.0" layoutY="132.0" text="ReportType">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="609.0" layoutY="276.0" text="Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="92.0" layoutY="159.0" prefHeight="47.0" prefWidth="433.0" />
+      <TextField layoutX="609.0" layoutY="159.0" prefHeight="47.0" prefWidth="433.0" />
+      <TextField layoutX="92.0" layoutY="303.0" prefHeight="47.0" prefWidth="433.0" />
+      <TextField layoutX="1113.0" layoutY="159.0" prefHeight="47.0" prefWidth="433.0" />
+      <TextField layoutX="609.0" layoutY="303.0" prefHeight="47.0" prefWidth="433.0" />
+      <Button layoutX="1130.0" layoutY="303.0" mnemonicParsing="false" text="Add+" />
+      <Button layoutX="1241.0" layoutY="350.0" mnemonicParsing="false" text="Delete" />
+      <Button layoutX="1330.0" layoutY="288.0" mnemonicParsing="false" text="Update" />
+   </children>
+</AnchorPane>

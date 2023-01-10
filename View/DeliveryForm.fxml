@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1004.0" prefWidth="1584.0" style="-fx-background-color: #ADC5CF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.DeliveryForm">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9980fa" height="312.0" layoutX="2.0" layoutY="74.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="27.32" surfaceScale="7.48">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#596275" height="75.0" layoutX="2.0" layoutY="386.0" stroke="BLACK" strokeType="INSIDE" width="1584.0" />
+      <Label layoutX="83.0" layoutY="105.0" text="Delivery ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="1052.0" layoutY="202.0" text="Arriaval Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="78.0" layoutY="307.0" text="Delivery Fee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="575.0" layoutY="307.0" text="Delivery Status">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="dateTxt" layoutX="575.0" layoutY="229.0" prefHeight="38.0" prefWidth="382.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="Arrival_timeTxt" layoutX="1055.0" layoutY="229.0" prefHeight="38.0" prefWidth="382.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="delivery_idTxt" layoutX="83.0" layoutY="132.0" prefHeight="38.0" prefWidth="382.0" promptText="id" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2e6ee" height="75.0" stroke="BLACK" strokeType="INSIDE" width="1584.0">
+         <effect>
+            <Lighting diffuseConstant="1.8" light="$null" specularConstant="0.0" specularExponent="36.1" surfaceScale="6.13">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <Label layoutX="14.0" layoutY="23.0" prefHeight="29.0" prefWidth="273.0" text="Delivery Oders ">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="1270.0" layoutY="398.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #0652DD;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.17" light="$null" specularConstant="0.96" specularExponent="22.44" surfaceScale="8.45">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="1410.0" layoutY="799.0" mnemonicParsing="false" onAction="#Save_printOnAction" prefHeight="54.0" prefWidth="94.0" text="Save&amp;Print">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.39" light="$null" specularConstant="1.08" specularExponent="24.39" surfaceScale="6.26">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="1113.0" layoutY="398.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #008B74;" text="Add+">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.61" light="$null" specularConstant="0.43" specularExponent="8.78" surfaceScale="9.06">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="1432.0" layoutY="398.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #ED4C67;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.44" light="$null" specularConstant="0.15" specularExponent="20.49" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="944.0" layoutY="396.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #f6b93b;" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.21" light="$null" specularConstant="0.35" specularExponent="11.22" surfaceScale="7.72">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Label layoutX="85.0" layoutY="202.0" text="Order ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1055.0" layoutY="105.0" text="Driver Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="105.0" text="Driver NIC">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Driver_NicTxt" layoutX="575.0" layoutY="132.0" prefHeight="38.0" prefWidth="382.0" promptText="nic" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="Driver_NameTxt" layoutX="1055.0" layoutY="132.0" prefHeight="38.0" prefWidth="382.0" promptText="name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="Order_idtxt" layoutX="83.0" layoutY="229.0" prefHeight="38.0" prefWidth="382.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="581.0" layoutY="202.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Delivery_feeTxt" layoutX="78.0" layoutY="334.0" prefHeight="38.0" prefWidth="382.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="Delivery_stetusTxt" layoutX="575.0" layoutY="334.0" prefHeight="38.0" prefWidth="382.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TableView fx:id="deliveryTbl" layoutX="132.0" layoutY="509.0" prefHeight="350.0" prefWidth="1269.0" style="-fx-background-color: #4FFBDF;">
+        <columns>
+          <TableColumn fx:id="ColdeliID" prefWidth="129.0" text="Delivery ID" />
+          <TableColumn fx:id="ColNic" prefWidth="110.0" text="Driver NIC" />
+            <TableColumn fx:id="ColName" prefWidth="225.0" text="Driver Name" />
+            <TableColumn fx:id="ColOrder" prefWidth="211.0" text="OrderID" />
+            <TableColumn fx:id="Coldate" prefWidth="136.0" text="Date" />
+            <TableColumn fx:id="Coltime" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="ColFee" prefWidth="161.0" text="Fee" />
+            <TableColumn fx:id="Colstetus" prefWidth="221.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="1336.0" layoutY="866.0" mnemonicParsing="false" onAction="#ReloadOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #786fa6;" text="Reload" />
+   </children>
+   <effect>
+      <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="28.29" surfaceScale="5.65">
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+      </Lighting>
+   </effect>
+</AnchorPane>

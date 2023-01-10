@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Fusion.controller.Main">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="1080.0" fitWidth="1920.0" layoutX="-1.0" opacity="0.88">
+         <image>
+            <Image url="@../Assets/lap3.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.76" light="$null" specularConstant="0.47" specularExponent="40.0" surfaceScale="8.41">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="816.0" fitWidth="779.0" layoutX="959.0" layoutY="54.0">
+         <image>
+            <Image url="@../Assets/yu.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1030.0" layoutY="567.0" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #7900FF;" text="        Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5758bb" height="55.0" layoutX="1030.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="611.0" />
+      <Label layoutX="1030.0" layoutY="414.0" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #7900FF;" text="      User Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Reflection bottomOpacity="0.06" />
+         </effect></Label>
+      <TextField fx:id="usernameTXT" layoutX="1038.0" layoutY="469.0" prefHeight="40.0" prefWidth="596.0" promptText="User_Name" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5758bb" height="55.0" layoutX="1030.0" layoutY="620.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="611.0" />
+      <PasswordField fx:id="passwordTXT" layoutX="1038.0" layoutY="628.0" prefHeight="40.0" prefWidth="596.0" promptText="Password" />
+      <ImageView fitHeight="816.0" fitWidth="779.0" layoutX="180.0" layoutY="54.0">
+         <image>
+            <Image url="@../Assets/lap3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="285.0" fitWidth="637.0" layoutX="1030.0" layoutY="80.0">
+         <image>
+            <Image url="@../Assets/llg.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow color="#6d00fc" height="39.66" radius="23.994999999999997" spread="0.77" width="58.32" />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c47aff" height="60.0" layoutX="1028.0" layoutY="704.0" stroke="BLACK" strokeType="INSIDE" width="611.0" />
+      <JFXButton buttonType="RAISED" layoutX="1043.0" layoutY="709.0" onAction="#LogInOnAction" onKeyPressed="#logEnterPress" prefHeight="50.0" prefWidth="581.0" style="-fx-background-color: #3F0071;" text="Log in" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold Italic" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularConstant="1.28" specularExponent="23.41" surfaceScale="3.82">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </JFXButton>
+      <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="750.0" layoutX="207.0" layoutY="80.0" />
+      <Label layoutX="750.0" layoutY="933.0" prefHeight="50.0" prefWidth="419.0" text=" Terms of Service© 2022. PrabhashWijerathna. All Rights Reserved." textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="784.0" layoutY="912.0" prefHeight="21.0" prefWidth="351.0" text="          Privacy Policy   |   License Agreement   |  " textFill="WHITE" />
+      <MediaView fx:id="bannerView" fitHeight="150.0" fitWidth="700.0" layoutX="220.0" layoutY="689.0" />
+      <MediaView fx:id="mediafram2" fitHeight="350.0" fitWidth="600.0" layoutX="270.0" layoutY="493.0" />
+   </children>
+</AnchorPane>
